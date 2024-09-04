@@ -1,22 +1,16 @@
-
 object daenerys{
 
-    var objecto = 2
-    const artefactos = #{}
+    var property capacidad = 2
+    const property artefactos = #{}
 
 
-    method agregarArtefacto(objectos){
-        if (objecto>0){
-        artefactos.add(artefactos)
-        objecto -= 1 
-        return "Se agrego: "+objectos+" a la mochila" 
-        }else return "Mochila llena se tienen los objetos: " 
+    method agregar(artefacto){
+        if (artefactos.size() < capacidad ){
+        artefactos.add(artefacto)
+        return "Se agrego: "+artefacto+" a la mochila" 
+        }
+        else return "Mochila llena se tienen los objetos: "+artefactos
     }
-
-    method mostrar(){
-        return objectos
-    }
-    
     
 }
 
